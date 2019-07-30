@@ -2557,12 +2557,12 @@ INSERT INTO stocks(store_id, product_id, quantity) VALUES(3,307,17);
 
 INSERT INTO stocks(store_id, product_id, quantity) VALUES(3,308,9);
 
-INSERT INTO stocks(store_id, product_id, quantity) VALUES(3,309,30);
+INSERT INTO stocks(store_id, product_id, quantity) VALUES(8,309,30);
 
-INSERT INTO stocks(store_id, product_id, quantity) VALUES(3,310,8);
+INSERT INTO stocks(store_id, product_id, quantity) VALUES(6,310,8);
 
-INSERT INTO stocks(store_id, product_id, quantity) VALUES(3,311,23);
+INSERT INTO stocks(store_id, product_id, quantity) VALUES(4,311,23);
 
-INSERT INTO stocks(store_id, product_id, quantity) VALUES(3,312,18);
+INSERT INTO stocks(store_id, product_id, quantity) VALUES(5,312,18);
 
-INSERT INTO stocks(store_id, product_id, quantity) VALUES(3,313,0);
+INSERT INTO stocks(store_id, product_id, quantity) VALUES(7,313,0);

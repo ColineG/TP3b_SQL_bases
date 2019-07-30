@@ -41,7 +41,8 @@ ADD CONSTRAINT fk_stocks_product
   ON UPDATE CASCADE ;
 
 ALTER TABLE stocks
-ADD FOREIGN KEY (store_id)
+ADD CONSTRAINT fk_stocks_stores
+  FOREIGN KEY (store_id)
   REFERENCES stores(store_id)
   ON DELETE CASCADE
   ON UPDATE CASCADE ;
@@ -57,11 +58,10 @@ ADD CONSTRAINT fk_staffs_stores
   ON DELETE CASCADE
   ON UPDATE CASCADE ;
 
-
 ALTER TABLE staffs
-ADD CONSTRAINT fk_staffs_managers 
+ADD CONSTRAINT fk_self_managers
   FOREIGN KEY (manager_id)
-  REFERENCES managers(manager_id)
+  REFERENCES staffs(staff_id)
   ON DELETE CASCADE
   ON UPDATE CASCADE ;
 
@@ -98,9 +98,5 @@ ADD FOREIGN KEY (staff_id)
   ON DELETE CASCADE
   ON UPDATE CASCADE ;
 
-ALTER TABLE managers
-ADD FOREIGN KEY (store_id)
-  REFERENCES stocks(store_id)
-  ON DELETE CASCADE
-  ON UPDATE CASCADE ;
+
 
